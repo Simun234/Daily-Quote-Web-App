@@ -1,7 +1,7 @@
 const questionAndAnswer = [
   {
-    question: "What is the best way to strat the day?",
-    answer: " A healthy breakfast!",
+    question: "What is the best way to start the day?",
+    answer: "A healthy breakfast!",
   },
   {
     question: "How do you stay motivated?",
@@ -12,19 +12,19 @@ const questionAndAnswer = [
     answer: "Persistence and hard work!",
   },
   {
-    question: "What is the key to achieving your goals",
-    answer: "Consistent effort and dedication",
+    question: "What is the key to achieving your goals?",
+    answer: "Consistent effort and dedication!",
   },
   {
-    question: "How do you maintain a positive mindset",
+    question: "How do you maintain a positive mindset?",
     answer: "Focus on the good and practice gratitude!",
   },
   {
-    question: "How do you turn a bad day around",
+    question: "How do you turn a bad day around?",
     answer: "Shift your focus to something positive and take a break!",
   },
   {
-    question: "What is the first step towards success",
+    question: "What is the first step towards success?",
     answer: "Taking action, no matter how small!",
   },
 ];
@@ -34,9 +34,9 @@ function updateQuote() {
   const index = today.getDate() % questionAndAnswer.length;
 
   document.getElementById("question-text").innerText =
-    questionsAndAnswers[index].question;
+    questionAndAnswer[index].question;
   document.getElementById("answer-text").innerText =
-    questionsAndAnswers[index].answer;
+    questionAndAnswer[index].answer;
 }
 
 updateQuote();
