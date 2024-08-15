@@ -54,4 +54,30 @@ body {
   color: black;
 }
 
-@media (m);
+@media (min-width: 900px) {
+  #question-text {
+    top: 10%;
+    left: 20%;
+    transform: translate(65%, 250%);
+  }
+
+  #answer-text {
+    top: 15%;
+    right: 20%;
+    transform: translate(65%, 250%);
+  }
+}
+
+@media (min-width: 900px) {
+  #question-text {
+    top: 10%;
+    left: 20%;
+    transform: translate(85%, 250%);
+  }
+
+  #answer-text {
+    top: 15%;
+    right: 20%;
+    transform: translate(85%, 250%);
+  }
+}
