@@ -12,13 +12,15 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Roboto Condensed", sans-serif;
+  width: 100vh;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("image/image.png");
+  background-image: url("image/background-image.png");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .quote-container {
@@ -37,13 +39,13 @@ body {
 #question-text {
   top: 10%;
   left: 20%;
-  transform: translate(-50%, -50%);
+  transform: translate(25%, 270%);
 }
 
 #answer-text {
   top: 15%;
   right: 20%;
-  transform: translate(50%, -50%);
+  transform: translate(25%, 270%);
 }
 
 .bubble p {
@@ -51,3 +53,5 @@ body {
   font-size: 14px;
   color: black;
 }
+
+@media (m);
