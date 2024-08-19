@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
 
-/* 
- font-family: "Roboto Condensed", sans-serif;
-*/
-
 * {
   box-sizing: border-box;
 }
@@ -11,16 +7,13 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Roboto Condensed", sans-serif;
-  width: 100vh;
+  width: auto;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("image/background-image.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-color: #f0f0f0;
+  text-align: center;
 }
 
 .quote-container {
@@ -29,55 +22,23 @@ body {
   height: 100%;
 }
 
-.bubble {
+button {
   position: absolute;
-  font-size: 24px;
-  width: 300px;
-  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #000;
+  font-weight: bold;
+  font-size: 25px;
+  margin-top: 90px;
+  right: 28%;
+  border-radius: 10px;
+  background-color: #add8e6;
+  z-index: 10;
 }
 
-#question-text {
-  top: 10%;
-  left: 20%;
-  transform: translate(25%, 270%);
-}
-
-#answer-text {
-  top: 15%;
-  right: 20%;
-  transform: translate(25%, 270%);
-}
-
-.bubble p {
-  margin: 0;
-  font-size: 14px;
-  color: black;
-}
-
-@media (min-width: 900px) {
-  #question-text {
-    top: 10%;
-    left: 20%;
-    transform: translate(65%, 250%);
-  }
-
-  #answer-text {
-    top: 15%;
-    right: 20%;
-    transform: translate(65%, 250%);
-  }
-}
-
-@media (min-width: 900px) {
-  #question-text {
-    top: 10%;
-    left: 20%;
-    transform: translate(85%, 250%);
-  }
-
-  #answer-text {
-    top: 15%;
-    right: 20%;
-    transform: translate(85%, 250%);
-  }
+img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
 }
